@@ -39,7 +39,6 @@ ul {
 }
 
 img {
-  width: 100%;
 }
 
 .container {
@@ -49,8 +48,6 @@ img {
   padding: 0 4rem;
   margin: 0 auto;
 }
-
-
 
 .stop-scrolling {
   height: 100%;
