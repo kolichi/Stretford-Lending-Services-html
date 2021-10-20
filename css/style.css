@@ -44,11 +44,11 @@ ul {
 }
 
 .read-more-text {
-  display: none;
+  display: none !important;
 }
 
 .read-more-text--show {
-  display: inline;
+  display: inline !important;
 }
 
 .read-more-container {
@@ -2228,3 +2228,25 @@ header .circle {
 }
 
 /* End Responsive */
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: 1.6s ease-in-out;
+}
+
+.inner:hover img {
+  transform: scale(1.3);
+}
+
+.card {
+  width: 20rem;
+}
+
+.card-img-top {
+  display: block;
+  display: table-cell;
+  height: 200px;
+}
