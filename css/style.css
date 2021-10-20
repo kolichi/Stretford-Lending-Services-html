@@ -28,6 +28,7 @@ button,
 input,
 textarea {
   font-family: "Poppins", sans-serif;
+  text-align: justify !important;
 }
 
 a {
@@ -38,7 +39,23 @@ ul {
   list-style: none;
 }
 
-img {
+.read-more-btn {
+  color: #0984e3;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text--show {
+  display: inline;
+}
+
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
 }
 
 .container {
