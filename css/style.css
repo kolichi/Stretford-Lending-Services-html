@@ -60,7 +60,7 @@ ul {
 
 .read-more-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: #111;
   gap: 1rem;
 }
@@ -2252,4 +2252,18 @@ header .circle {
   display: block;
   display: table-cell;
   height: 200px;
+}
+
+@media only screen and (max-width: 540px) {
+  .grid-4-col {
+    margin: 1rem auto;
+  }
+  .column-1 {
+    width: 75vw;
+    justify-self: center;
+  }
+  .footer-newstletter {
+    width: 75vw;
+    margin: 1rem auto;
+  } 
 }
