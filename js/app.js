@@ -112,9 +112,10 @@ parentContainer.addEventListener('click', event=>{
     if(!isReadMoreBtn) return;
 
     const currentText = event.target.parentNode.querySelector('.read-more-text');
+    const currentButtonText = event.target.parentNode.querySelector('.read-more-btn');
 
     currentText.classList.toggle('read-more-text--show');
 
-    current.textContent = current.textContent.includes('Read More') ? "Read more..." : "Read less...";
+    currentButtonText.textContent = currentText.classList.contains('read-more-text--show')? "Read Less" : "Read More";
 
 })
