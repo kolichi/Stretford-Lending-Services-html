@@ -2267,3 +2267,17 @@ header .circle {
     margin: 1rem auto;
   } 
 }
+
+@media only screen and (max-width: 1280px) {
+  .testi-content.grid-2 {
+    grid-template-columns: 3fr 2fr;
+  }
+  .testi-content.grid-2>.column-2.image {
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+  }
+  .testi-content.grid-2>.column-2.image>img {
+    width: 30vw;
+  }
+}
