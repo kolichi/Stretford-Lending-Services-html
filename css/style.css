@@ -2251,7 +2251,7 @@ header .circle {
 .card-img-top {
   display: block;
   display: table-cell;
-  height: 10rem;
+  height: 5rem !important;
   width: 10rem;
 }
 
