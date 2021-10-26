@@ -511,10 +511,10 @@ header .circle {
   height: 8px;
 }
 
-/* .icon {
+.icon {
   width: 90px;
   margin-bottom: 1.7rem;
-}  */
+}
 
 .card .title-sm {
   line-height: 0.8;
