@@ -241,6 +241,7 @@ table .row {
   text-transform: uppercase;
   font-weight: 500;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -1471,11 +1472,6 @@ header .circle {
 
   .title-sm {
     font-size: 1.2rem;
-  }
-
-  .btn {
-    padding: 0.75rem 1.7rem;
-    font-size: 0.8rem;
   }
 
   .btn.small {
