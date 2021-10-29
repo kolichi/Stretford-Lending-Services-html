@@ -102,6 +102,10 @@ table .row {
   line-height: 1.6;
 }
 
+.card-content>.text {
+  text-align: justify;
+}
+
 .column-1 {
   margin-right: 1.5rem;
 }
