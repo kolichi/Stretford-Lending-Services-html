@@ -785,19 +785,19 @@
      
      function whatsappMsg(){
 
-      var fname = document.getElementsByClassName("contact-input").value; 
-      var lname = document.getElementsByClassName("contact-input").value; 
-      var Email = document.getElementsByClassName("contact-input").value; 
-      var Phone = document.getElementsByClassName("contact-input").value; 
-      var message = document.getElementsByClassName("contact-input").value; 
+      var fname = document.getElementsByClassName("fn").value; 
+      var lname = document.getElementsByClassName("ln").value; 
+      var Email = document.getElementsByClassName("em").value; 
+      var Phone = document.getElementsByClassName("ph").value; 
+      var message = document.getElementsByClassName("msg").value; 
 
       var url="https://wa.me/918789529215?text=Hi%20There!" 
       
-      + "fname" + contact-input  + "%0a"   
-      + "lname" +  contact-input + "%0a"   
-      + "Email" + contact-input   + "%0a"   
-      + "Phone" + contact-input  + "%0a"   
-      + "message" +  contact-input;   
+      + "Fname" + fn + "%0a"   
+      + "Lname" +  ln + "%0a"   
+      + "Email" + em   + "%0a"   
+      + "Phone" + ph  + "%0a"   
+      + "Message" +  msg;   
 
       window.open(url, '_blank').focus();
 
