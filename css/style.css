@@ -102,7 +102,7 @@ table .row {
   line-height: 1.6;
 }
 
-.card-content>.text {
+.card-content > .text {
   text-align: justify;
 }
 
@@ -493,12 +493,13 @@ header .circle {
 .card-img {
   width: 100%;
   object-fit: cover;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10.7;
+  display: block;
+  display: table-cell;
 }
 
-.card-img:hover {
-  
-}
+/* .card-img:hover {
+} */
 
 /* .card:before {
   content: attr(data-card);
@@ -2296,4 +2297,4 @@ header .circle {
   .testi-content.grid-2 > .column-2.image > img {
     width: 30vw;
   }
-} ;
+}
