@@ -148,7 +148,7 @@
               </div>
             </div>
 
-            <div class="card-wrap">
+            <div class="card-wrap ">
               <img
                 src="./img/shapes/points3.png"
                 class="points points1 points-sq"
@@ -630,25 +630,27 @@
               <div class="row">
                 <input
                   type="text"
-                  class="contact-input"
+                  name="Fname"
+                  class="contact-input fn"
                   placeholder="First Name"
                 />
                 <input
                   type="text"
-                  class="contact-input"
+                  name="Lname"
+                  class="contact-input ln"
                   placeholder="Last Name"
                 />
               </div>
 
               <div class="row">
-                <input type="text" class="contact-input" placeholder="Phone" />
-                <input type="email" class="contact-input" placeholder="Email" />
+                <input  type="text" name="Phone" class="contact-input ph" placeholder="Phone" />
+                <input type="email" name="Email" class="contact-input em" placeholder="Email" />
               </div>
 
               <div class="row">
                 <textarea
-                  name="message"
-                  class="contact-input textarea"
+                  name="Message"
+                  class="contact-input textarea msg"
                   placeholder="Message"
                 ></textarea>
               </div>
@@ -771,6 +773,31 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+     
+     function whatsappMsg(){
+
+      var fname = document.getElementsByClassName("contact-input").value; 
+      var lname = document.getElementsByClassName("contact-input").value; 
+      var Email = document.getElementsByClassName("contact-input").value; 
+      var Phone = document.getElementsByClassName("contact-input").value; 
+      var message = document.getElementsByClassName("contact-input").value; 
+
+      var url="https://wa.me/918789529215?text=" 
+      
+      + "Fname" + contact-input  + "%0a"   
+      + "Lname" +  contact-input + "%0a"   
+      + "Email" + contact-input   + "%0a"   
+      + "Phone" + contact-input  + "%0a"   
+      + "Message" +  contact-input;   
+
+      window.open(url, '_blank').focus();
+
+     }
+
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/isotope.pkgd.min.js"></script>
