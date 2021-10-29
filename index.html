@@ -631,26 +631,29 @@
                 <input
                   type="text"
                   name="Fname"
-                  class="contact-input fn"
+                  class="contact-input"
+                  id="fn"
                   placeholder="First Name"
                 />
                 <input
                   type="text"
                   name="Lname"
-                  class="contact-input ln"
+                  class="contact-input"
+                  id="ln"
                   placeholder="Last Name"
                 />
               </div>
 
               <div class="row">
-                <input  type="text" name="Phone" class="contact-input ph" placeholder="Phone" />
-                <input type="email" name="Email" class="contact-input em" placeholder="Email" />
+                <input  type="text" name="Phone" class="contact-input" id="ph" placeholder="Phone" />
+                <input type="email" name="Email" class="contact-input em" id="em" placeholder="Email" />
               </div>
 
               <div class="row">
                 <textarea
                   name="Message"
-                  class="contact-input textarea msg"
+                  class="contact-input textarea"
+                  id="msg"
                   placeholder="Message"
                 ></textarea>
               </div>
@@ -785,13 +788,13 @@
      
      function whatsappMsg(){
 
-      var fn = document.getElementsByClassName("fn").value; 
-      var ln = document.getElementsByClassName("ln").value; 
-      var em = document.getElementsByClassName("em").value; 
-      var ph = document.getElementsByClassName("ph").value; 
-      var msg = document.getElementsByClassName("msg").value; 
+      var fname = document.getElementsById("fn").value; 
+      var lname = document.getElementsById("ln").value; 
+      var Email = document.getElementsById("em").value; 
+      var Phone = document.getElementsById("ph").value; 
+      var message = document.getElementsById("msg").value; 
 
-      var url="https://wa.me/918789529215?text=" 
+      var url="https://wa.me/918789529215?text=Hi%20There!" 
       
       + "Fname" + fn + "%0a"   
       + "Lname" +  ln + "%0a"   
