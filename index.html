@@ -630,6 +630,7 @@
                 <input
                   type="text"
                   name="Fname"
+                  required
                   class="contact-input"
                   id="fn"
                   placeholder="First Name"
@@ -637,6 +638,7 @@
                 <input
                   type="text"
                   name="Lname"
+                  required
                   class="contact-input"
                   id="ln"
                   placeholder="Last Name"
@@ -644,8 +646,8 @@
               </div>
 
               <div class="row">
-                <input  type="text" name="Phone" class="contact-input" id="ph" placeholder="Phone" />
-                <input type="email" name="Email" class="contact-input em" id="em" placeholder="Email" />
+                <input  type="text" name="Phone" required class="contact-input" id="ph" placeholder="Phone" />
+                <input type="email" name="Email" required class="contact-input em" id="em" placeholder="Email" />
               </div>
 
               <div class="row">
@@ -653,8 +655,8 @@
                   name="Message"
                   class="contact-input textarea"
                   id="msg"
-                  placeholder="Message"
-                ></textarea>
+                  placeholder="Message" required
+                > </textarea>
               </div>
               <!-- <input
                       type="submit"
