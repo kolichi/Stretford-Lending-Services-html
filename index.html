@@ -147,7 +147,7 @@
               </div>
             </div>
 
-            <div class="card-wrap">
+            <div class="card-wrap ">
               <img
                 src="./img/shapes/points3.png"
                 class="points points1 points-sq"
@@ -629,31 +629,42 @@
               <div class="row">
                 <input
                   type="text"
+                  name="Fname"
                   class="contact-input"
+                  id="fn"
                   placeholder="First Name"
                 />
                 <input
                   type="text"
+                  name="Lname"
                   class="contact-input"
+                  id="ln"
                   placeholder="Last Name"
                 />
               </div>
 
               <div class="row">
-                <input type="text" class="contact-input" placeholder="Phone" />
-                <input type="email" class="contact-input" placeholder="Email" />
+                <input  type="text" name="Phone" class="contact-input" id="ph" placeholder="Phone" />
+                <input type="email" name="Email" class="contact-input em" id="em" placeholder="Email" />
               </div>
 
               <div class="row">
                 <textarea
-                  name="message"
+                  name="Message"
                   class="contact-input textarea"
+                  id="msg"
                   placeholder="Message"
                 ></textarea>
               </div>
-              <a href="#/" class="btn">Send</a>
+              <!-- <input
+                      type="submit"
+                      name="submit"
+                      class="btnSubmit btn-block btn"
+                      value="Submit"
+                    /> -->
+              <span type="submit" name="submit" value="Submit"  onclick="whatsappMsg()" class="btn "> Send </span> 
             </div>
-          </div>
+          </div>|
         </div>
       </section>
 
@@ -666,7 +677,7 @@
             consequuntur, fugit ratione vel aperiam, similique distinctio
             mollitia repellendus quasi rem vero!
           </p>
-          <a href="#/" class="btn">Message us</a>
+          <span onclick="whatsappMsg()" class="btn" > Message us </span>
         </div>
       </section>
     </main>
@@ -770,6 +781,31 @@
         </div>
       </div>
     </footer>
+
+
+    <script>
+     
+     function whatsappMsg(){
+
+      var fname = document.getElementById("fn").value; 
+      var lname = document.getElementById("ln").value; 
+      var Email = document.getElementById("em").value; 
+      var Phone = document.getElementById("ph").value; 
+      var message = document.getElementById("msg").value; 
+
+      var url="https://wa.me/918789529215?text=" 
+      
+      + "Fname" + fname + "%0a"   
+      + "Lname" +  lname + "%0a"   
+      + "Email" + Email   + "%0a"   
+      + "Phone" + Phone  + "%0a"   
+      + "Message" +  message;   
+
+      window.open(url, '_blank').focus();
+
+     }
+
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/isotope.pkgd.min.js"></script>
